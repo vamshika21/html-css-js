@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+
+<body>
+    <style>
+        h3 {
+            background-color: aqua;
+        }
+    </style>
+    <form>
+        <input type="text" placeholder="enter name" id="pudhar" value="vamshi">
+        <input type="number" placeholder="enter phone" id="phone" value="1234568890">
+        <span id="phoneError"></span>
+    </form>
+    <div id="displaySomething">hi</div>
+    <div id="disPhone">hello</div>
+    <h3 class="hi">lower hi class</h3>
+    <button onclick="clickMe()">click me</button>
+    <button id="btn">click</button>
+    <button onclick="clickMe()">click me</button>
+    <script>
+        //level 0
+        function clickMe() {
+            alert('using function1')
+        }
+        function clickMe() {
+            alert('using function2')
+        }
+        function clickMe() {
+            alert('using function3')
+        }
+        function clickMe() {
+            alert('using function4')
+        }
+        //level 1
+        
+        let show = document.querySelector("#btn");
+        show.addEventListener('click', function clickMe() {
+            alert('using function1')
+        })
+        show.addEventListener('click', function clickMe() {
+            alert('using function2')
+        })
+        show.addEventListener('click', function clickMe() {
+            alert('using function3')
+        })
+        show.addEventListener('click', function clickMe() {
+            alert('using function4')
+        })
+        //level 2  no need
+        show.addEventListener('click', function clickMe() {
+            alert('using function')
+        }, true)
+        </script>
+        
+        <script src="ex2.js">web</script>
+</body>
+
+</html>

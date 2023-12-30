@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+</head>
+
+<body>
+    <div>
+        <p id="red">Red</p>
+        <p id="yellow"> Yellow</p>
+    </div>
+    <form onclick="clickme(); return false;">
+        <input type="text" />
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        const aa = document.querySelector('#red');
+        const bb = document.querySelector('#yellow');
+        aa.onmouseover = () => {
+            aa.style.backgroundColor = "red"
+        };
+
+        bb.addEventListener('click', () => {
+            bb.style.backgroundColor = "yellow"
+        });
+        let clickme = () => {
+            alert('using function')
+        };
+        </script>
+</body >
+</html >

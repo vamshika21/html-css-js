@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+</head>
+<style>
+    .box1 {
+        border: 2px solid black;
+        padding: 40px;
+        margin: 30px;
+        box-sizing: border-box;
+        height: 250px;
+        width: 250px;
+    }
+    .box2 {
+        border: 2px solid black;
+        padding: 40px;
+        margin: 30px;
+        box-sizing: border-box;
+        height: 250px;
+        width: 250px;
+    }
+    .box3 {
+        border: 2px solid black;
+        padding: 40px;
+        margin: 30px;
+        box-sizing: border-box;
+        height: 250px;
+        width: 250px;
+    }
+    .box4 {
+        border: 2px solid black;
+        padding: 40px;
+        margin: 30px;
+        box-sizing: border-box;
+        height: 250px;
+        width: 250px;
+    }
+
+    body {
+        display: flex;
+    }
+</style>
+<body id="bb">
+    <div class="box1" style="background-color:lightskyblue;">
+    </div>
+    <div class="box2" style="background-color:lightpink;">
+    </div>
+    <div class="box3" style="background-color:purple;">
+    </div>
+    <div class="box4" style="background-color:blue;">
+    </div>
+    <script>
+        let bx1 = document.querySelector('.box1');
+        bx1.addEventListener('click', () => {
+            bb.style.backgroundColor = "lightskyblue"
+        });
+        let bx2 = document.querySelector('.box2');
+        bx2.addEventListener('click', () => {
+            bb.style.backgroundColor = "lightpink"
+        });
+        let bx3 = document.querySelector('.box3');
+        bx3.addEventListener('click', () => {
+            bb.style.backgroundColor = "purple"
+        });
+        let bx4 = document.querySelector('.box4');
+        bx4.addEventListener('click', () => {
+            bb.style.backgroundColor = "blue"
+        });
+    </script>
+</body>
+</html>
